@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SecondMenu"
+    android:background="@drawable/bubbles">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="LEARN"
+        android:onClick="learnClick"
+        android:id="@+id/LearnBtn"
+        android:layout_above="@+id/stop_button"
+        android:layout_alignLeft="@+id/stop_button"
+        android:layout_alignStart="@+id/stop_button" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="START QUIZ"
+        android:onClick="quizClick"
+        android:id="@+id/stop_button"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/play_button"
+        android:layout_alignStart="@+id/play_button" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="Add More Sounds"
+        android:onClick="TakePicture"
+        android:id="@+id/play_button"
+        android:layout_below="@+id/stop_button"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

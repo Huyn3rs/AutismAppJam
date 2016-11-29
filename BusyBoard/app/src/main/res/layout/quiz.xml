@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.paygrade.appjam.appjam.QuizOne"
+    android:background="@drawable/bubbles">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY SOUND"
+        android:id="@+id/PlaySoundBtn"
+        android:layout_below="@+id/InfoTxt"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:id="@+id/rightButton"
+        android:onClick="rightChoice"
+        android:maxHeight="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:backgroundTint="#2a5fc8"
+        android:layout_below="@+id/PlaySoundBtn"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:id="@+id/leftButton"
+        android:onClick="leftChoice"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/rightButton"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:backgroundTint="#2a5fc8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InfoTxt"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:maxHeight="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:onClick="nextQuestion"
+        android:id="@+id/NextBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:onClick="finishClick"
+        android:id="@+id/FinishBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
